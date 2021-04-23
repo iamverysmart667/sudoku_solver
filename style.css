@@ -1,0 +1,68 @@
+body {
+  background: #000;
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: Sans;
+  z-index: 100;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row:nth-child(2) {
+  border-top: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.cell {
+  display: flex;
+  padding: 1em;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.45);
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
+  text-align: center;
+  transition: background 0.25s;
+}
+
+.cell:hover {
+  background: rgba(100, 100, 100, .3);
+}
+
+.cell:nth-child(1) {
+  border-left: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.cell-button {
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 33.3333%;
+  border-top: 2px solid rgba(255, 255, 255, 0.45);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.45);
+  border-right: 2px solid rgba(255, 255, 255, 0.45);
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+.cell-button:nth-child(1) {
+  border-left: 2px solid rgba(255, 255, 255, 0.45);
+}
+
+.cell-button:hover {
+  background: rgba(100, 100, 100, .3);
+}
+
+.cell-button:active {
+  background: rgba(255, 255, 255, 0.45);
+  color: #000;
+}
